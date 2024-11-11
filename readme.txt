@@ -1,4 +1,19 @@
-2, 4, 6, 12, 10
+2, 4, 6, 10, 12
+
+.
+├── aggnidx
+│   └── aggregate.txt
+├── cursor
+│   ├── explicit.sql
+│   ├── implicit.sql
+│   └── theory.txt
+├── ddl
+│   └── theory.txt
+├── plsql
+│   ├── library.sql
+│   └── theory.txt
+└── readme.txt
+
 
 # check mysql service
 
