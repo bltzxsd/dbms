@@ -1,0 +1,14 @@
+The Declaration section: 
+Code block start with a declaration section, in which memory variables, constants & cursors can be declared.
+
+The Begin section: Consist of set of SQL and PL/SQL statements, which describe processes that have to be applied to table data. Actual data manipulation, retrieval, looping and branching constructs are specified in this section.
+
+The Exception section: This section deals with handling errors that arise during execution data manipulation statements, which make up PL/SQL code block. Errors can arise due to syntax, logic and/or validation rule.
+
+The End section: This marks the end of a PL/SQL block.
+
+Broadly, PL/SQL blocks are two types: Anonymous blocks and Named blocks are as follows:
+
+1. Anonymous blocks: In PL/SQL, That’s blocks which is not have header are known as anonymous blocks. These blocks do not form the body of a function or triggers or procedure. Example: Here a code example of find greatest number with Anonymous blocks. 
+
+2. Named blocks: That’s PL/SQL blocks which having header or labels are known as Named blocks. These blocks can either be subprograms like functions, procedures, packages or Triggers. Example: Here a code example of find greatest number with Named blocks means using function. 

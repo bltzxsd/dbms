@@ -1,0 +1,28 @@
+db.createCollection("deposits")
+
+db.deposits.insertMany([
+	{ "name": "Mustafa", "amt": 100 },
+	{ "name": "Siddhesh", "amt": 500 },
+	{ "name": "Jaidatt", "amt": 200 },
+	{ "name": "Harshita", "amt": 700 },
+	{ "name": "Siddhesh", "amt": 100 },
+	{ "name": "Jaidatt", amt: 200 }
+])
+
+db.deposits.aggregate({
+	$group: { _id: "$name", "total": { $sum: "$amt" } }
+})
+
+db.deposits.aggregate({
+	$group: { _id: "$name", "avg": { $avg: "$amt" } }
+})
+
+
+db.deposits.aggregate({
+	$group: { _id: "$name", "min": { $min: "$amt" } }
+})
+
+db.deposits.aggregate({
+	$group: { _id: "$name", "max": { $max: "$amt" } }
+})
+

@@ -1,0 +1,16 @@
+IMPLICIT CURSOR
+
+Definition: An implicit cursor is automatically created by MySQL whenever you execute a SQL statement that returns data (e.g., SELECT).
+
+1. Automatically Manged: MySQL internally manages the cursor, so you don’t have to open, fetch, or close it.
+
+2. No Declaration: You don’t declare implicit cursors explicitly in your code; they’re created by MySQL as needed.
+
+====================
+
+EXPLICIT CURSOR
+
+Definition: An explicit cursor is one that you explicitly declare and control in your code when working with queries that return multiple rows
+
+1. Manually Managed: You must open, fetch from, and close an explicit cursor
+2. Requires Declaration: You explicitly declare the cursor in your code
