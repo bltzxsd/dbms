@@ -13,17 +13,19 @@
 └── readme.txt
 
 
-# check mysql service
+- mysql
 
-systemctl status mysqld
+$ systemctl status mysqld
+$ mysql
+sql> show databases;
+sql> use <database>;
+sql> show tables;
+sql> show columns from <table>;
 
-# check mongodb service
+- mongodb
 
-systemctl status mongod
+$ systemctl status mongod
+$ mongosh
 
-# general SQL commands
-
-show databases;
-use <database>;
-show tables;
-show columns from <table>;
+mongo> db.collection.find().pretty()
+mongo> db.collection.drop()
