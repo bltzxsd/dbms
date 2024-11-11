@@ -1,0 +1,19 @@
+db.createCollection("deposits")
+
+db.deposits.insertMany([
+	{ "name": "Mustafa", "amt": 100 },
+	{ "name": "Siddhesh", "amt": 500 },
+	{ "name": "Jaidatt", "amt": 200 },
+	{ "name": "Harshita", "amt": 700 },
+	{ "name": "Siddhesh", "amt": 100 },
+	{ "name": "Jaidatt", amt: 200 }
+])
+
+db.deposits.createIndex({"name":1})
+
+db.deposits.getIndexes()
+
+db.deposits.dropIndex({"name":1})
+
+db.deposits.createIndex({"name":-1})
+
