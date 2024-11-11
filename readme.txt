@@ -1,6 +1,8 @@
 .
 ├── aggnidx
-│   └── aggregate.txt
+│   ├── aggregate.txt
+│   ├── index.txt
+│   └── theory.txt
 ├── cursor
 │   ├── explicit.sql
 │   ├── implicit.sql
